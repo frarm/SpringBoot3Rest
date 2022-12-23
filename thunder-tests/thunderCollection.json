@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "a9f64925-6f95-49c4-82ee-8efa9a4dadac",
+    "colName": "Spring3Rest",
+    "created": "2022-12-23T22:18:52.073Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "2acc111f-e46a-4968-97bc-7643161f4a32",
+        "name": "Section08",
+        "containerId": "",
+        "created": "2022-12-23T22:18:52.075Z",
+        "sortNum": 20000
+      }
+    ]
+  }
+]
