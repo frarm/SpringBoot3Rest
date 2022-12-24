@@ -55,7 +55,7 @@
     "method": "POST",
     "sortNum": 25000,
     "created": "2022-12-23T22:18:52.080Z",
-    "modified": "2022-12-23T22:18:52.080Z",
+    "modified": "2022-12-24T00:23:35.169Z",
     "headers": [
       {
         "name": "Content-Type",
@@ -68,6 +68,13 @@
       "raw": "  {\n    \"name\": \"1\",\n    \"birthDate\": \"2222-12-22\"\n  }",
       "form": []
     },
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "username",
+        "password": "password"
+      }
+    },
     "tests": []
   },
   {
@@ -77,11 +84,18 @@
     "name": "ListUsers",
     "url": "http://localhost:8080/users",
     "method": "GET",
-    "sortNum": 30000,
+    "sortNum": 7500,
     "created": "2022-12-23T22:18:52.081Z",
-    "modified": "2022-12-23T22:18:52.081Z",
+    "modified": "2022-12-24T00:21:02.754Z",
     "headers": [],
     "params": [],
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "username",
+        "password": "password"
+      }
+    },
     "tests": []
   },
   {
@@ -187,6 +201,117 @@
       }
     ],
     "params": [],
+    "tests": []
+  },
+  {
+    "_id": "bafd5031-fa22-499d-8c50-2ede73b99803",
+    "colId": "a9f64925-6f95-49c4-82ee-8efa9a4dadac",
+    "containerId": "2acc111f-e46a-4968-97bc-7643161f4a32",
+    "name": "FindUserJpa",
+    "url": "http://localhost:8080/jpa/users/10002",
+    "method": "GET",
+    "sortNum": 15000,
+    "created": "2022-12-23T23:10:32.722Z",
+    "modified": "2022-12-23T23:11:24.962Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "bff134e1-ffdb-41ce-bdd4-e2f7a3bca53e",
+    "colId": "a9f64925-6f95-49c4-82ee-8efa9a4dadac",
+    "containerId": "2acc111f-e46a-4968-97bc-7643161f4a32",
+    "name": "ListUsersJpa",
+    "url": "http://localhost:8080/jpa/users",
+    "method": "GET",
+    "sortNum": 8750,
+    "created": "2022-12-23T23:10:52.345Z",
+    "modified": "2022-12-23T23:11:11.775Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "7048cfcd-0d85-4372-ba27-e8d27816c4b7",
+    "colId": "a9f64925-6f95-49c4-82ee-8efa9a4dadac",
+    "containerId": "2acc111f-e46a-4968-97bc-7643161f4a32",
+    "name": "RemoveUserJpa",
+    "url": "http://localhost:8080/jpa/users/10001",
+    "method": "DELETE",
+    "sortNum": 22500,
+    "created": "2022-12-23T23:13:24.939Z",
+    "modified": "2022-12-23T23:13:43.270Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "128147e1-0718-4e6d-95bf-ca224f4d20a6",
+    "colId": "a9f64925-6f95-49c4-82ee-8efa9a4dadac",
+    "containerId": "2acc111f-e46a-4968-97bc-7643161f4a32",
+    "name": "SaveUserJpa",
+    "url": "http://localhost:8080/jpa/users",
+    "method": "POST",
+    "sortNum": 32500,
+    "created": "2022-12-23T23:14:53.575Z",
+    "modified": "2022-12-24T00:37:00.737Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "  {\n    \"name\": \"frarm\",\n    \"birthDate\": \"1993-12-22\"\n  }",
+      "form": []
+    },
+    "auth": {
+      "type": "basic",
+      "basic": {
+        "username": "username",
+        "password": "password"
+      }
+    },
+    "tests": []
+  },
+  {
+    "_id": "b6c94a03-6b99-447d-97ed-f27c9488f897",
+    "colId": "a9f64925-6f95-49c4-82ee-8efa9a4dadac",
+    "containerId": "2acc111f-e46a-4968-97bc-7643161f4a32",
+    "name": "ListPostsForUser",
+    "url": "http://localhost:8080/jpa/users/1/posts",
+    "method": "GET",
+    "sortNum": 100000,
+    "created": "2022-12-23T23:38:24.050Z",
+    "modified": "2022-12-24T00:13:06.917Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "fe7f4865-f255-4ca1-a112-0477db83bb4f",
+    "colId": "a9f64925-6f95-49c4-82ee-8efa9a4dadac",
+    "containerId": "2acc111f-e46a-4968-97bc-7643161f4a32",
+    "name": "savePostForUser",
+    "url": "http://localhost:8080/jpa/users/1/posts",
+    "method": "POST",
+    "sortNum": 110000,
+    "created": "2022-12-23T23:48:22.126Z",
+    "modified": "2022-12-24T00:12:59.684Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"description\": \"I want to Learn SpringBoot\"\n}",
+      "form": []
+    },
     "tests": []
   }
 ]
