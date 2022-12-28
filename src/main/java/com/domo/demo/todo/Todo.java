@@ -6,7 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
-@Entity
+// @Entity
 public class Todo {
 
     public Todo() {
@@ -22,8 +22,8 @@ public class Todo {
         this.done = done;
     }
 
-    @Id
-    @GeneratedValue
+    // @Id
+    // @GeneratedValue
     private Integer id;
 
     private String username;

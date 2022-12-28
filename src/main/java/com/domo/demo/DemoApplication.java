@@ -19,7 +19,6 @@ public class DemoApplication {
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
 						.allowedMethods("*")
-						.allowedHeaders("*")
 						.allowedOrigins("*");
 			}
 		};
